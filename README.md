@@ -21,7 +21,7 @@ python tna.py
 
 It takes around 15 minutes to process the corpus on a desktop computer (2.2Ghz, 16gb of RAM). After the calculations are done, you should get a visualization presented below:
 
-<img src="graph.png" height="50%" width="50%" alt="graph"/>
+<img src="text_network.png" height="50%" width="50%" alt="graph"/>
 
 ## TODO
 
