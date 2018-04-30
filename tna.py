@@ -58,7 +58,9 @@ def create_and_assign_communities(text_network):
 def draw_final_graph(text_network):
     # TODO: graph formatting, colors, size etc.
     logging.warning('Drawing')
-    nx.draw(text_network,with_labels=True)
+    pos = nx.shell_layout(text_network,scale=2)
+    colors = range(text_network.number_of_edges())
+    nx.draw(text_network,with_labels=True, font_size=8,node_color="#A0CBe2",edge_Color=colors,width=4,edge_cmap=plt.cm.Blues)
     plt.draw()
     plt.show()
 
