@@ -32,10 +32,10 @@ def create_graph(text):
                     word_list.append(word_a)
                 if word_b not in word_list:
                     word_list.append(word_b)
-                    if G.has_edge(word_a,word_b):
-                        G[word_a][word_b]['weight'] += 1
-                    else:
-                        G.add_edge(word_a,word_b, weight = 1)
+                if G.has_edge(word_a,word_b):
+                    G[word_a][word_b]['weight'] += 1
+                else:
+                    G.add_edge(word_a,word_b, weight = 1)
         pbar.update(1)
     pbar.close()
     return G
