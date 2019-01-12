@@ -13,19 +13,19 @@ The code is written in python. The dependencies are:
 
 ## Example usage
 
-An example corpus of 1.2 million tokens from PubMed open abstracts on cancer is included. To create and visualize a graph based on this corpus, simply run:
+An example corpus with a couple of PubMed open abstracts is included. To create and visualize a graph based on this corpus, simply run:
 
 ```python
 python tna.py
 ```
 
-It takes around 15 minutes to process the corpus on a desktop computer (2.2Ghz, 16gb of RAM). After the calculations are done, you should get a visualization presented below:
+It takes a couple of second minutes to process the corpus on a desktop computer, however bigger corpuses with millions of words might need hours of calculation. After the calculations are done, you should get a visualization presented below:
 
 <img src="text_network.png" height="75%" width="75%" alt="graph"/>
 
-## TODO
+## Features
 
-It is not a final version, as it does not modify the colors and size of the nodes. These features will be added to reflect the work presented in the aforementioned paper.
+The tool not only filters the most important words by the means of betweenness centrality, but also uses community detection to cluster the words partaining to the same topics together. The tool also saves the network in a .gml format that might be used in other popular network analysis programs.
 
 ## Reference
 
