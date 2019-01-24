@@ -19,7 +19,7 @@ An example corpus with a couple of PubMed open abstracts is included. To create 
 python tna.py
 ```
 
-It takes a couple of second minutes to process the corpus on a desktop computer, however bigger corpuses with millions of words might need hours of calculation. After the calculations are done, you should get a visualization presented below:
+It takes a couple of seconds to process the corpus on a desktop computer, however bigger corpuses with millions of words might need hours of calculation. After the calculations are done, you should get a visualization presented below:
 
 <img src="text_network.png" height="75%" width="75%" alt="graph"/>
 
